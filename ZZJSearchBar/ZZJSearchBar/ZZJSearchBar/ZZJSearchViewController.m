@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
     
     [self createPage];
+    [self handleClosure];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -53,9 +54,30 @@
     self.searchBar.delegate = self;//设置代理
 }
 
+- (void)handleClosure {
+    //处理闭包
+    __weak typeof(self) WeakSelf = self;
+    self.searchTableView.JumpClosure = ^(NSString *searchText) {
+        [WeakSelf saveSearchTextWith:searchText];
+        NSLog(@"%@",searchText);
+    };
+}
+
+#pragma mark - Handle Data
+- (void)getData {
+    self.searchTableView.dataArray = @[@"sfase",@"ada",@"s",@"sfds",@"rgrg",@"vfbf",@"afraef"];
+    [self.searchTableView.tableView reloadData];
+}
+
 - (void)reloadHistoryData {
-    self.searchCollectionView.dataArray = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8"];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *array = [NSMutableArray arrayWithArray:[userDefaults  objectForKey:@"myHistoryArray"]];
+    self.historyArray = [[array reverseObjectEnumerator] allObjects];
+    
+    self.searchCollectionView.dataArray = self.historyArray;
     [self.searchCollectionView.collectionView reloadData];
+    NSLog(@"%@",self.searchCollectionView.dataArray);
 }
 
 #pragma mark - UISearchBarDelegate
@@ -81,14 +103,11 @@
 // 点击键盘的search按钮,再请求一遍数据
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
+    [self saveSearchTextWith:searchBar.text];
+    
     //请求数据
     [self getData];
     [self.searchBar resignFirstResponder];
-}
-
-- (void)getData {
-    self.searchTableView.dataArray = @[@"sfase",@"ada",@"s",@"sfds",@"rgrg",@"vfbf",@"afraef"];
-    [self.searchTableView.tableView reloadData];
 }
 
 // 取消按钮触发方法
@@ -101,6 +120,63 @@
     
     //回收键盘
     [self.searchBar resignFirstResponder];
+}
+
+#pragma mark - 搜索历史
+- (void)saveSearchTextWith:(NSString *)searchText {
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //读取数组NSArray类型的数据
+    NSArray *myHistoryArray = [[NSArray alloc] initWithArray:[userDefaults objectForKey:@"myHistoryArray"]];
+    
+    // NSArray --> NSMutableArray
+    NSMutableArray *searchTextArray = [NSMutableArray array];
+    searchTextArray = [myHistoryArray mutableCopy];
+    
+    BOOL isEqualTo1 = NO;
+    BOOL isEqualTo2 = NO;
+    
+    if (searchTextArray.count > 0) {
+        isEqualTo2 = YES;
+        //判断搜索内容是否存在，存在的话放到数组最后一位，不存在的话添加
+        for (NSString *str in myHistoryArray) {
+            if ([searchText isEqualToString:str]) {
+                //获取指定对象的索引
+                NSUInteger index = [myHistoryArray indexOfObject:searchText];
+                [searchTextArray removeObjectAtIndex:index];
+                [searchTextArray addObject:searchText];
+                isEqualTo1 = YES;
+                break;
+            }
+        }
+    }
+    
+    if (!isEqualTo1 || !isEqualTo2) {
+        [searchTextArray addObject:searchText];
+    }
+    
+//    if (searchTextArray.count > 6) {
+//        [searchTextArray removeObjectAtIndex:0];
+//    }
+    
+    //将上述数据全部存储到NSUserDefaults中
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:searchTextArray forKey:@"myHistoryArray"];
+}
+
+#pragma mark - 清空搜索历史
+- (void)clearHistory:(UIButton *)button {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSArray *myHistoryArray = [userDefaults arrayForKey:@"myHistoryArray"];
+    NSMutableArray *searchTextArray = [myHistoryArray mutableCopy];
+    [searchTextArray removeAllObjects];
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:searchTextArray forKey:@"myHistoryArray"];
+    
+    
+    
+    NSLog(@"清除历史记录");
 }
 
 #pragma mark - lazy
