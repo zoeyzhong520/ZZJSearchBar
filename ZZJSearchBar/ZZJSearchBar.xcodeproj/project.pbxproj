@@ -15,13 +15,12 @@
 		D86E07881EF797E60065C027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86E07861EF797E60065C027 /* LaunchScreen.storyboard */; };
 		D86E07931EF797E60065C027 /* ZZJSearchBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07921EF797E60065C027 /* ZZJSearchBarTests.m */; };
 		D86E079E1EF797E60065C027 /* ZZJSearchBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E079D1EF797E60065C027 /* ZZJSearchBarUITests.m */; };
-		D86E07AF1EF79DFB0065C027 /* ZZJSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07AE1EF79DFB0065C027 /* ZZJSearchViewController.m */; };
-		D86E07C61EF7B6130065C027 /* ZZJSearchCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07BE1EF7B6130065C027 /* ZZJSearchCollectionView.m */; };
-		D86E07C71EF7B6130065C027 /* ZZJSearchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07C01EF7B6130065C027 /* ZZJSearchCollectionViewCell.m */; };
-		D86E07C81EF7B6130065C027 /* ZZJSearchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07C31EF7B6130065C027 /* ZZJSearchTableView.m */; };
-		D86E07C91EF7B6130065C027 /* ZZJSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07C51EF7B6130065C027 /* ZZJSearchTableViewCell.m */; };
-		D86E07CC1EF7B6490065C027 /* ZZJSearchCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07CB1EF7B6490065C027 /* ZZJSearchCollectionHeaderView.m */; };
-		D86E07CD1EF7B7800065C027 /* ZZJSearchCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07BE1EF7B6130065C027 /* ZZJSearchCollectionView.m */; };
+		D86E07DE1EF7BC2C0065C027 /* ZZJSearchCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07D21EF7BC2C0065C027 /* ZZJSearchCollectionHeaderView.m */; };
+		D86E07DF1EF7BC2C0065C027 /* ZZJSearchCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07D41EF7BC2C0065C027 /* ZZJSearchCollectionView.m */; };
+		D86E07E01EF7BC2C0065C027 /* ZZJSearchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07D61EF7BC2C0065C027 /* ZZJSearchCollectionViewCell.m */; };
+		D86E07E11EF7BC2C0065C027 /* ZZJSearchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07D91EF7BC2C0065C027 /* ZZJSearchTableView.m */; };
+		D86E07E21EF7BC2C0065C027 /* ZZJSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07DB1EF7BC2C0065C027 /* ZZJSearchTableViewCell.m */; };
+		D86E07E31EF7BC2C0065C027 /* ZZJSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86E07DD1EF7BC2C0065C027 /* ZZJSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,19 +57,19 @@
 		D86E07991EF797E60065C027 /* ZZJSearchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZJSearchBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86E079D1EF797E60065C027 /* ZZJSearchBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchBarUITests.m; sourceTree = "<group>"; };
 		D86E079F1EF797E60065C027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D86E07AC1EF7980E0065C027 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		D86E07AD1EF79DFB0065C027 /* ZZJSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchViewController.h; sourceTree = "<group>"; };
-		D86E07AE1EF79DFB0065C027 /* ZZJSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchViewController.m; sourceTree = "<group>"; };
-		D86E07BD1EF7B6130065C027 /* ZZJSearchCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchCollectionView.h; sourceTree = "<group>"; };
-		D86E07BE1EF7B6130065C027 /* ZZJSearchCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchCollectionView.m; sourceTree = "<group>"; };
-		D86E07BF1EF7B6130065C027 /* ZZJSearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchCollectionViewCell.h; sourceTree = "<group>"; };
-		D86E07C01EF7B6130065C027 /* ZZJSearchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchCollectionViewCell.m; sourceTree = "<group>"; };
-		D86E07C21EF7B6130065C027 /* ZZJSearchTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchTableView.h; sourceTree = "<group>"; };
-		D86E07C31EF7B6130065C027 /* ZZJSearchTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchTableView.m; sourceTree = "<group>"; };
-		D86E07C41EF7B6130065C027 /* ZZJSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchTableViewCell.h; sourceTree = "<group>"; };
-		D86E07C51EF7B6130065C027 /* ZZJSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchTableViewCell.m; sourceTree = "<group>"; };
-		D86E07CA1EF7B6490065C027 /* ZZJSearchCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchCollectionHeaderView.h; sourceTree = "<group>"; };
-		D86E07CB1EF7B6490065C027 /* ZZJSearchCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchCollectionHeaderView.m; sourceTree = "<group>"; };
+		D86E07CF1EF7BC2C0065C027 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		D86E07D11EF7BC2C0065C027 /* ZZJSearchCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchCollectionHeaderView.h; sourceTree = "<group>"; };
+		D86E07D21EF7BC2C0065C027 /* ZZJSearchCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchCollectionHeaderView.m; sourceTree = "<group>"; };
+		D86E07D31EF7BC2C0065C027 /* ZZJSearchCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchCollectionView.h; sourceTree = "<group>"; };
+		D86E07D41EF7BC2C0065C027 /* ZZJSearchCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchCollectionView.m; sourceTree = "<group>"; };
+		D86E07D51EF7BC2C0065C027 /* ZZJSearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchCollectionViewCell.h; sourceTree = "<group>"; };
+		D86E07D61EF7BC2C0065C027 /* ZZJSearchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchCollectionViewCell.m; sourceTree = "<group>"; };
+		D86E07D81EF7BC2C0065C027 /* ZZJSearchTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchTableView.h; sourceTree = "<group>"; };
+		D86E07D91EF7BC2C0065C027 /* ZZJSearchTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchTableView.m; sourceTree = "<group>"; };
+		D86E07DA1EF7BC2C0065C027 /* ZZJSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchTableViewCell.h; sourceTree = "<group>"; };
+		D86E07DB1EF7BC2C0065C027 /* ZZJSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchTableViewCell.m; sourceTree = "<group>"; };
+		D86E07DC1EF7BC2C0065C027 /* ZZJSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJSearchViewController.h; sourceTree = "<group>"; };
+		D86E07DD1EF7BC2C0065C027 /* ZZJSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +120,7 @@
 		D86E07771EF797E60065C027 /* ZZJSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				D86E07AB1EF7980E0065C027 /* ZZJSearchBar */,
+				D86E07CE1EF7BC2C0065C027 /* ZZJSearchBar */,
 				D86E077B1EF797E60065C027 /* AppDelegate.h */,
 				D86E077C1EF797E60065C027 /* AppDelegate.m */,
 				D86E077E1EF797E60065C027 /* ViewController.h */,
@@ -161,38 +160,38 @@
 			path = ZZJSearchBarUITests;
 			sourceTree = "<group>";
 		};
-		D86E07AB1EF7980E0065C027 /* ZZJSearchBar */ = {
+		D86E07CE1EF7BC2C0065C027 /* ZZJSearchBar */ = {
 			isa = PBXGroup;
 			children = (
-				D86E07BC1EF7B6130065C027 /* ZZJSearchCollectionView */,
-				D86E07C11EF7B6130065C027 /* ZZJSearchTableView */,
-				D86E07AC1EF7980E0065C027 /* Macro.h */,
-				D86E07AD1EF79DFB0065C027 /* ZZJSearchViewController.h */,
-				D86E07AE1EF79DFB0065C027 /* ZZJSearchViewController.m */,
+				D86E07CF1EF7BC2C0065C027 /* Macro.h */,
+				D86E07D01EF7BC2C0065C027 /* ZZJSearchCollectionView */,
+				D86E07D71EF7BC2C0065C027 /* ZZJSearchTableView */,
+				D86E07DC1EF7BC2C0065C027 /* ZZJSearchViewController.h */,
+				D86E07DD1EF7BC2C0065C027 /* ZZJSearchViewController.m */,
 			);
 			path = ZZJSearchBar;
 			sourceTree = "<group>";
 		};
-		D86E07BC1EF7B6130065C027 /* ZZJSearchCollectionView */ = {
+		D86E07D01EF7BC2C0065C027 /* ZZJSearchCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				D86E07BD1EF7B6130065C027 /* ZZJSearchCollectionView.h */,
-				D86E07BE1EF7B6130065C027 /* ZZJSearchCollectionView.m */,
-				D86E07BF1EF7B6130065C027 /* ZZJSearchCollectionViewCell.h */,
-				D86E07C01EF7B6130065C027 /* ZZJSearchCollectionViewCell.m */,
-				D86E07CA1EF7B6490065C027 /* ZZJSearchCollectionHeaderView.h */,
-				D86E07CB1EF7B6490065C027 /* ZZJSearchCollectionHeaderView.m */,
+				D86E07D11EF7BC2C0065C027 /* ZZJSearchCollectionHeaderView.h */,
+				D86E07D21EF7BC2C0065C027 /* ZZJSearchCollectionHeaderView.m */,
+				D86E07D31EF7BC2C0065C027 /* ZZJSearchCollectionView.h */,
+				D86E07D41EF7BC2C0065C027 /* ZZJSearchCollectionView.m */,
+				D86E07D51EF7BC2C0065C027 /* ZZJSearchCollectionViewCell.h */,
+				D86E07D61EF7BC2C0065C027 /* ZZJSearchCollectionViewCell.m */,
 			);
 			path = ZZJSearchCollectionView;
 			sourceTree = "<group>";
 		};
-		D86E07C11EF7B6130065C027 /* ZZJSearchTableView */ = {
+		D86E07D71EF7BC2C0065C027 /* ZZJSearchTableView */ = {
 			isa = PBXGroup;
 			children = (
-				D86E07C21EF7B6130065C027 /* ZZJSearchTableView.h */,
-				D86E07C31EF7B6130065C027 /* ZZJSearchTableView.m */,
-				D86E07C41EF7B6130065C027 /* ZZJSearchTableViewCell.h */,
-				D86E07C51EF7B6130065C027 /* ZZJSearchTableViewCell.m */,
+				D86E07D81EF7BC2C0065C027 /* ZZJSearchTableView.h */,
+				D86E07D91EF7BC2C0065C027 /* ZZJSearchTableView.m */,
+				D86E07DA1EF7BC2C0065C027 /* ZZJSearchTableViewCell.h */,
+				D86E07DB1EF7BC2C0065C027 /* ZZJSearchTableViewCell.m */,
 			);
 			path = ZZJSearchTableView;
 			sourceTree = "<group>";
@@ -331,14 +330,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86E07801EF797E60065C027 /* ViewController.m in Sources */,
-				D86E07C61EF7B6130065C027 /* ZZJSearchCollectionView.m in Sources */,
-				D86E07C91EF7B6130065C027 /* ZZJSearchTableViewCell.m in Sources */,
+				D86E07DF1EF7BC2C0065C027 /* ZZJSearchCollectionView.m in Sources */,
+				D86E07E21EF7BC2C0065C027 /* ZZJSearchTableViewCell.m in Sources */,
 				D86E077D1EF797E60065C027 /* AppDelegate.m in Sources */,
-				D86E07C81EF7B6130065C027 /* ZZJSearchTableView.m in Sources */,
-				D86E07C71EF7B6130065C027 /* ZZJSearchCollectionViewCell.m in Sources */,
+				D86E07E11EF7BC2C0065C027 /* ZZJSearchTableView.m in Sources */,
+				D86E07E01EF7BC2C0065C027 /* ZZJSearchCollectionViewCell.m in Sources */,
+				D86E07DE1EF7BC2C0065C027 /* ZZJSearchCollectionHeaderView.m in Sources */,
+				D86E07E31EF7BC2C0065C027 /* ZZJSearchViewController.m in Sources */,
 				D86E077A1EF797E60065C027 /* main.m in Sources */,
-				D86E07AF1EF79DFB0065C027 /* ZZJSearchViewController.m in Sources */,
-				D86E07CC1EF7B6490065C027 /* ZZJSearchCollectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +354,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86E079E1EF797E60065C027 /* ZZJSearchBarUITests.m in Sources */,
-				D86E07CD1EF7B7800065C027 /* ZZJSearchCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
